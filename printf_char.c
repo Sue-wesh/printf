@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -11,7 +10,7 @@ int _printf(const char *format, ...)
 {
 	int len = 0;
 
-	while(*format != '\0')
+	while (*format != '\0')
 	{
 		len++;
 		format++;
@@ -30,9 +29,9 @@ int main(void)
 	int len = 0;
 
 	len = _printf(format);
-	printf("%d\n",len);
-	printf("%s\n", format);  
+	printf("%d\n", len);
+	printf("%s\n", format);
 	printf("%%\n");
 	putchar('\n');
-	return(0);
+	return (0);
 }
