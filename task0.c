@@ -45,15 +45,16 @@ int _printf(const char *format, ...)
 	va_end(list);
 	return (len);
 }
+/**
+ * main - calls function _printf
+ *
+ * Return : 0 at the end
+ */
 int main(void)
 {
 	char *format = "Hello Dan";
-	int len = 0;
+	int len = _printf(format);
 
-	while (*format != '\0')
-	{
-		len++;
-		format++;
-	}
-	return (len);
+	printf("%d", len);
+	return (0);
 }
